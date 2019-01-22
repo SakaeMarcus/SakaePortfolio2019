@@ -1,0 +1,68 @@
+// Colors
+// accent = #7e00d1;
+// #af9084
+// #5e7923
+gold = #bfad7c;
+accent = #bfad7c;
+textColor = #344655;
+borderColor = #e5e5e5;
+linkColor = tomato;
+
+body {
+  font-family: 'Bree Serif';
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio {
+  color: textColor;
+  width: 100%;
+  max-width: 900px;
+}
+
+a {
+  color: linkColor;
+}
+
+strong {
+  color: accent;
+}
+
+.fineprint {
+  line-height: 1.5em;
+  color: #999;
+  i {
+    color: #e0a196;
+  }
+}
+
+.tabs {
+  display: flex;
+  position: relative;
+  top: 1px;
+  a.tab {
+    color: accent;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #eee;
+    border-top: 3px solid borderColor;
+    color, &.router-link-exact-active {
+      color: linkColor;
+      background: white;
+      border-top: 3px solid accent;
+    }
+    margin: 0 12px;
+  }
+}
+
+.info-view {
+  border-top: 1px solid borderColor;
+  border-bottom: 1px solid borderColor;
+  padding: 1em 1.5em;
+}
+
+code {
+  background: #eee;
+  border: 1px solid borderColor;
+  padding: 2px 4px;
+}
